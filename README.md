@@ -1,6 +1,6 @@
 # RAZRABOT
 
-Parsing keywords from WB products
+Parsing keywords from WB product
 
 Using private dependencies [quirkink](https://github.com/Quirkink)
 
@@ -29,6 +29,16 @@ Install dependencies
 
 ```bash
 poetry install
+```
+
+## Configure project
+
+```bash
+cp .env.dist .env
+```
+
+```bash
+nano .env
 ```
 
 ## Run bot
