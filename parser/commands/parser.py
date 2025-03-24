@@ -2,6 +2,7 @@
 File with commands (start and message handlers)
 for the WB parser bot.
 """
+
 from asyncio import create_task
 
 from quirkink.bot.router import Router

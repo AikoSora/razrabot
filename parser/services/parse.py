@@ -1,9 +1,7 @@
 """
 File with services for parsing wb pages.
-
-aiohttp is included in the libraries required for aiogram,
-and the quirkink-bot framework is built on top of aiogram.
 """
+
 from re import compile as re_compile
 
 from loguru import logger
@@ -19,30 +17,6 @@ def get_session() -> ClientSession:
     """
 
     return ClientSession()
-
-
-def get_headers() -> dict:
-    """
-    Get headers for the request.
-    """
-
-    return {
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'ru',
-        'Cache-Control': 'no-cache',
-        'Origin': 'https://www.wildberries.ru',
-        'Pragma': 'no-cache',
-        'Priority': 'u=3, i',
-        'Referer': 'https://www.wildberries.ru/',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'cross-site',
-        'Sec-Fetch-User': '?1',
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
-                      'AppleWebKit/605.1.15 (KHTML, like Gecko) '
-                      'Version/18.1 Safari/605.1.15',
-    }
 
 
 def parse_url(url: str) -> tuple[int, int, int]:

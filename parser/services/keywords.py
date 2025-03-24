@@ -1,6 +1,7 @@
 """
 Parsing keywords from the product info.
 """
+
 from os import getenv
 from functools import lru_cache
 
